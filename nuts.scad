@@ -115,7 +115,7 @@ module screwShaft(mSize, length, nutThickness) {
   }
 }
 
-module hextNutCapturePocket(mSize) {
+module hexNutCapturePocket(mSize) {
   hexNutBoreless(mSize);
 }
 
