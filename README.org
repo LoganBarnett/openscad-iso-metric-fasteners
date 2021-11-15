@@ -1,0 +1,57 @@
+#+title:     ISO Metric Fasteners
+#+author:    Logan Barnett-Hoy
+#+email:     logustus@gmail.com
+#+date:      <2021-11-14 Sun>
+#+language:  en
+#+file_tags:
+#+tags:
+
+This repository contains ISO metric fasteners (nuts and screws) that can be used
+in OpenSCAD projects.
+
+** Usage
+
+This document covers two usages: Using git and a submodule (highly recommended)
+or cloning directly into your code directory (not recommended).
+
+*** Usage with a git submodule
+
+Ultimately you can see documentation about git submodules [[https://git-scm.com/book/en/v2/Git-Tools-Submodules][here]].
+
+**** Installation with a git submodule
+From a terminal, enter the directory of your repository and run the statement
+below:
+#+begin_example shell
+git submodule add https://github.com/LoganBarnett/openscad-iso-metric-fasteners
+#+end_example
+
+This adds the submodule to your repository. However, this change is not yet
+permanent.  Running =git status= will reveal that there is now a =.gitmodules=
+file as well as an =openscad-iso-metric-fasteners= directory that are ready to
+be committed.
+
+#+begin_example shell
+$ git status
+On branch main
+Your branch is up-to-date with 'origin/main'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .gitmodules
+	new file:   openscad-iso-metric-fasteners
+#+end_example
+
+You can commit with =git commit= these files and push the changes with =git
+push= when you are ready.
+
+**** Updating with a git submodule
+
+Coming soon.
+
+*** Usage with a direct clone
+
+Nothing special here. Just run =git clone= with the repository URL.
+
+I'll flesh this out more later, but since it's not recommended, it's not the
+highest documentation priority.
